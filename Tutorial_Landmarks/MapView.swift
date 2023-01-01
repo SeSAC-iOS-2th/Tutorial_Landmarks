@@ -17,7 +17,8 @@ struct MapView: View {
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
     )
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        //상태 프로퍼티 이름 앞엔 '$' 표기
+        Map(coordinateRegion: $region)
     }
 }
 
